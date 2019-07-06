@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/basic_info"
+              android:textSize="@dimen/title"
+              android:layout_marginLeft="@dimen/margin_left_employee_detail_title"
+              android:textStyle="bold"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            fresco:placeholderImage="@drawable/ic_launcher_background"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/picture"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/margin_right_employee_detail"
+                  android:textStyle="bold"
+                  android:text="@string/full_name"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="right"
+                  android:layout_marginRight="@dimen/margin_right_employee_detail"
+                  android:id="@+id/fullname"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:layout_marginLeft="@dimen/margin_right_employee_detail"
+                  android:text="@string/birthdate"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="right"
+                  android:layout_marginRight="@dimen/margin_right_employee_detail"
+                  android:id="@+id/birthdate"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/extended_info"
+              android:layout_marginLeft="@dimen/margin_left_employee_detail_title"
+              android:textSize="@dimen/title"
+              android:textStyle="bold"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:onClick="openGMaps">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:layout_marginLeft="@dimen/margin_right_employee_detail"
+                  android:text="@string/address"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="right"
+                  android:layout_marginRight="@dimen/margin_right_employee_detail"
+                  android:id="@+id/address"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:layout_marginLeft="@dimen/margin_right_employee_detail"
+                  android:text="@string/user_name"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="right"
+                  android:layout_marginRight="@dimen/margin_right_employee_detail"
+                  android:id="@+id/userName"/>
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:layout_marginLeft="@dimen/margin_right_employee_detail"
+                  android:text="@string/password"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="right"
+                  android:layout_marginRight="@dimen/margin_right_employee_detail"
+                  android:id="@+id/password"/>
+    </LinearLayout>
+</LinearLayout>
